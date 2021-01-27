@@ -7,7 +7,7 @@ root.config(bg='#000')
 def checker():
     word = entry.get()
     if word == word[::-1]:
-        print('same')
+        output.config(f'{word} is a palindrome')
 
 Label(text='This program checks if input is a Palindrome', font='candara 14',
     fg='#fff').pack(pady=(10,5))
